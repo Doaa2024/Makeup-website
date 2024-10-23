@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background: url(makeup_theme.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    background-color: #00aaff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2.5px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signupHeader {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.svg-icon {
+    position: absolute;
+    top: 48.5%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 1.5rem;
+    height: auto;
+    fill: white;
+}
+
+.wrapper input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border-radius: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.wrapper input::placeholder {
+    color: #fff;
+}
+
+.but {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.signup_but {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 40px;
+    background-color: white;
+    color: rgb(185, 143, 149);
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.signup_but:hover {
+    background-color: #f0f0f0;
+}
+
+.register {
+    text-align: center;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.register .text {
+    color: white;
+    font-size: 14px;
+}
+
+.register .signin {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register .signin:hover {
+    text-decoration: underline;
+}
+.errorText{
+    font-size: smaller;
+    margin-left: 10px;
+    color: rgb(251, 30, 30);
+    }
+   
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .signupHeader {
+        font-size: 30px;
+    }
+
+    .svg-icon {
+        top: 47.5%;
+    }
+
+    .wrapper input {
+        padding: 0.75rem 2rem 0.75rem 1rem;
+        font-size: 14px;
+    }
+
+    .signup_but {
+        padding: 0.5rem 1.5rem;
+        font-size: 18px;
+    }
+
+    .register .text {
+        font-size: 12px;
+    }
+
+    .register .signin {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .signupHeader {
+        font-size: 24px;
+    }
+    .wrapper{
+        max-width: 150px;
+        padding: 0.5rem;
+    }
+
+    .svg-icon {
+        width: 1.2rem;
+        top: 46.5%;
+    }
+
+    .wrapper input {
+        padding: 0.5rem 1.5rem 0.5rem 1rem;
+        font-size: 12px;
+    }
+
+    .signup_but {
+        padding: 0.5rem 1rem;
+        font-size: 16px;
+    }
+
+    .register .text {
+        font-size: 10px;
+    }
+
+    .register .signin {
+        font-size: 12px;
+    }
+}
